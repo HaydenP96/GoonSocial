@@ -2,10 +2,8 @@
 <html lang="en">
   <%- include('partials/head') %>
   <body>
-    <% if (auth == 'false') { %>
-        <%- include('partials/navbar/navbar')  %>
-    <%} else { %>
-        <%- include('partials/navbar/navbarAuth')  %>
-    <% } %>
+    <% if (auth == 'false') { %> <%- include('partials/navbar/navbar') %> <%-
+    include('partials/main/main') %> <%} else { %> <%-
+    include('partials/navbar/navbarAuth') %> <% } %>
   </body>
 </html>
