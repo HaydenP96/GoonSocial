@@ -4,7 +4,20 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.render('index', { auth: 'false' });
+  const posts = [
+    (post1 = {
+      user: 'Hayden Peterson',
+      description: 'This is post 1',
+      date: new Date(),
+    }),
+    (post2 = {
+      user: 'Abigail Dawid',
+      description: 'This is post 2',
+      date: new Date(),
+    }),
+  ];
+
+  res.render('index', { auth: 'true', posts: posts });
 });
 
 app.get('/register', (req, res) => {

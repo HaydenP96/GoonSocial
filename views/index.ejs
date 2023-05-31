@@ -4,6 +4,7 @@
   <body>
     <% if (auth == 'false') { %> <%- include('partials/navbar/navbar') %> <%-
     include('partials/main/main') %> <%} else { %> <%-
-    include('partials/navbar/navbarAuth') %> <% } %>
+    include('partials/navbar/navbarAuth') %> <%-
+    include('partials/main/mainAuth') %> <% } %>
   </body>
 </html>

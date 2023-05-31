@@ -1,0 +1,43 @@
+<div class="container col-xl-6 col-xxl-3 px-4 py-2">
+  <div class="card shadow-sm">
+    <div class="card-header fw-bold">Create a Post</div>
+    <div
+      class="card-body d-flex align-items-start justify-content-between gap-2">
+      <img
+        src="https://img.icons8.com/?size=512&id=13042&format=png"
+        alt="mdo"
+        width="40"
+        height="40"
+        class="rounded-circle shadow-sm bg-white border p-1" />
+      <textarea
+        rows="1"
+        class="w-100 form-control rounded bg-light shadow-sm"
+        placeholder="What's on your mind?"></textarea>
+    </div>
+    <div class="d-flex justify-content-end mt-0 mx-3 mb-2">
+      <button class="btn btn-primary btn-sm">Post</button>
+    </div>
+  </div>
+
+  <% posts.forEach(function(post) { %>
+  <div class="card shadow-sm my-4">
+    <div class="d-flex align-items-center gap-2 border-bottom p-2 bg-light">
+      <img
+        src="https://img.icons8.com/?size=512&id=13042&format=png"
+        alt="mdo"
+        width="40"
+        height="40"
+        class="rounded-circle shadow-sm bg-white border p-1" />
+      <div>
+        <h5 class="card-title"><%= post.user %></h5>
+        <h6 class="mb-0 card-subtitle text-body-secondary">
+          <%= post.date.toLocaleDateString() %>
+        </h6>
+      </div>
+    </div>
+
+    <p class="p-2"><%= post.description %></p>
+  </div>
+
+  <% }) %>
+</div>
