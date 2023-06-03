@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('partials/head') %>
-  <body>
-    <% if (auth == 'false') { %> <%- include('partials/navbar/navbar') %> <%-
-    include('partials/main/main') %> <%} else { %> <%-
-    include('partials/navbar/navbarAuth') %> <%-
-    include('partials/main/mainAuth') %> <% } %>
+  <%- include('components/partials/head') %>
+  <body class="bg-light">
+    <%- include('components/home/auth') %>
   </body>
 </html>

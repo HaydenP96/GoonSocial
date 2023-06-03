@@ -1,0 +1,15 @@
+@import '~bootstrap-icons/font/bootstrap-icons';
+
+#test {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#test2:focus {
+  height: 200px;
+  transition: all 0.8s ease-in-out;
+}

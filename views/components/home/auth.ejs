@@ -1,0 +1,54 @@
+<div class="bg-white shadow-sm">
+  <div class="container"><%- include('../partials/navbar') %></div>
+</div>
+<div class="container col-lg-6 col-xl-5 col-xxl-4 mx-auto">
+  <div class="card bg-white shadow mb-4">
+    <div class="card-body">
+      <div class="d-flex gap-3">
+        <div
+          class="fs-3 rounded-circle bg-primary col-md-3 shadow-sm text-end text-center"
+          id="test">
+          H
+        </div>
+        <div>
+          <h5 class="card-title">Hayden Peterson</h5>
+          <h6 class="card-subtitle text-muted text-sm fw-normal">4:20 PM</h6>
+        </div>
+      </div>
+      <div class="fs-4 mt-2 mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam rem
+        fugiat nam perferendis, sint temporibus aspernatur veniam consectetur
+        eligendi vel pariatur distinctio illum accusantium impedit, asperiores,
+        similique blanditiis. Tempore, cum!
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="modal fade mt-3"
+  id="example2"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row text-start">
+          <div class="col-sm">
+            <h2 class="card-title mb-1">New Post</h2>
+            <h6 class="card-subtitle text-body-secondary">
+              Let other
+              <span class="text-primary">Goons</span> know what's good.
+            </h6>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"></button>
+      </div>
+      <div class="modal-body"><%- include('../forms/post') %></div>
+    </div>
+  </div>
+</div>

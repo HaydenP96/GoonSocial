@@ -1,0 +1,35 @@
+<header
+  class="d-flex flex-wrap align-items-center justify-content-between py-1 mb-4">
+  <div class="col-md-3">
+    <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+      <h1 class="text-primary fs-2 mb-0">GoonSocial</h1>
+    </a>
+  </div>
+
+  <div class="dropdown">
+    <button
+      class="btn dropdown-toggle d-flex align-items-end"
+      data-bs-toggle="dropdown"
+      aria-expanded="false">
+      <div
+        class="fs-3 rounded-circle bg-primary col-md-3 shadow-sm text-end text-center"
+        id="test">
+        <%= name %>
+      </div>
+    </button>
+    <ul class="dropdown-menu mt-1 shadow">
+      <li>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#example2"
+          class="dropdown-item">
+          New Post
+        </button>
+      </li>
+
+      <li><hr class="dropdown-divider" /></li>
+      <li><a href="#" class="dropdown-item">Sign out</a></li>
+    </ul>
+  </div>
+</header>
